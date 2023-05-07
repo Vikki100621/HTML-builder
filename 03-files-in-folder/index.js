@@ -9,7 +9,6 @@ fs.readdir(folderPath, (err, files) => {
     stdout.write(err);
     return;
   }
-
   files.forEach((file) => {
     const filePath = path.join(folderPath, file);
     fs.stat(filePath, (err, stats) => {
